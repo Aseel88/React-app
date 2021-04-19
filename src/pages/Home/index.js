@@ -4,6 +4,7 @@ import Title from "../../components/Title";
 import SearchItem from "../../components/SearchItem";
 import Button from "../../components/Button";
 import axios from 'axios';
+import './home.css';
 
 
 const HomePage = () => {
@@ -34,23 +35,26 @@ const onChange = (e) =>{
     return(
     <div>
         <Navbar></Navbar>
-        <Title>Home page </Title>
-        <form className= "submit-form" onSubmit={onSubmit}>
-            <input type="text" placeholder="Search" onChange={onChange}
-            value= {searchText} />
-            <Button>Submit</Button>
-        </form>
-        <div className= "recipes" style={{ width: "100%", height: "60%" }} >
-            {
-                searchResults !== [] &&
-                searchResults.map((searchItem, key) =>
-                    <SearchItem 
-                    key={key}    
-                    image={searchItem.recipe.image}                
-                    title={searchItem.recipe.label}
-                    url={searchItem.recipe.url}
-                    />                
-            )}
+        <div className="home-view">
+            <Title>Welcome! </Title>
+            <p>Would you like to try new recipes?</p>
+            <form className= "submit-form" onSubmit={onSubmit}>
+                <input type="text" placeholder="Search for a recipe" onChange={onChange}
+                value= {searchText} />
+                <Button>Search</Button>
+            </form>
+            <div className= "recipes" style={{ width: "100%", height: "60%" }} >
+                {
+                    searchResults !== [] &&
+                    searchResults.map((searchItem, key) =>
+                        <SearchItem 
+                        key={key}    
+                        image={searchItem.recipe.image}                
+                        title={searchItem.recipe.label}
+                        url={searchItem.recipe.url}
+                        />                
+                )}
+                </div>
         </div>
     </div>
 )

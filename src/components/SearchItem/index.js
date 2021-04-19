@@ -18,7 +18,7 @@ const SearchItem = props => {
           target="_blank"
 
         href= {props.url}>
-        Read more .. 
+        Go to the recipe 
         </a>
       </div>
     );

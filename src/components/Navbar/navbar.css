@@ -1,23 +1,68 @@
 .navbar{
     background-color: black;
-    min-height: 30%;
-    padding-top: 0px;
+    height: 80px;
+    padding-top: 0px;   
     margin-top: -20px;
-}
-.navbar ul{
-    padding: 15px;
-    list-style: none;
-    max-width: 35%;
-   
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     justify-content: space-between;
 }
-.navbar ul a{
-    color: white;
-    text-decoration: none;
+/* .navbar__img{
+    padding-right: -20px;
+} */
+.navbar__img img{
+    width: 100px;
+    height: 80px;  
 }
-.navbar ul a:hover{
-    text-decoration: underline;
+.ul{
+    width: 70%;
+    padding-left: 0px;
+}
+ ul{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    list-style: none;
+    min-width: 100%;   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+.ul ul a{
+    color: #b31227;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;
+    transition-property: all;
+}
+.ul ul a:hover{
+    /* text-decoration: underline; */
+    transform: translatey(-2px);
+    color: #f7a4af;
+}
+@media screen and (min-width: 600px) {
+     .ul{
+       max-width: 80%;
+       font-size: 18px;
+    } 
+}
+@media screen and (min-width: 900px) {
+     .ul{
+       max-width: 55%;
+    } 
+}
+@media screen and (min-width: 1100px) {
+     .ul{
+       max-width: 45%;
+    } 
+}
+@media screen and (min-width: 1200px) {
+     .ul{
+       max-width: 40%;
+    } 
 }

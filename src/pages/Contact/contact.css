@@ -1,0 +1,47 @@
+.contact-view{
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 35px;
+    /* padding-right: 25px;
+    padding-top: 25px; */
+
+
+    /* border: 1px solid black; */
+    background-color: rgb(226, 224, 224);
+    opacity: 0.8;
+    /* border-radius: 15px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
+    /* margin-top: -15px;     */
+}
+.contact-view p,
+.contact-view h1,
+.contact-view Button{
+    font-weight: bold;
+    
+}
+@media screen and (min-width: 600px) {
+    .contact-view{
+        padding: 20%;
+        /* padding-right: 20%;
+        padding-top: 20%; */
+    }
+}
+@media screen and (min-width: 900px) {
+    .contact-view {
+    font-size: 18px;
+  } 
+  .contact-view Button{
+    width: 150px;
+    font-size: 18px;
+} 
+  }
+  @media screen and (min-width: 1200px) {
+    .contact-view{
+        padding-top:10%;
+        padding-left: 30%;
+        padding-right: 30%;
+    } 
+}

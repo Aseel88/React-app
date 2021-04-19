@@ -6,9 +6,25 @@
 }
 
 
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Rubik+Mono+One&display=swap");
 
+:root {
+    --mainColor: #CE1069;
+    --buttonOnHover: rgb(252, 213, 213);
+    --textColor:white;
 
+    } */
 
+.fullView{
+  min-height: 100vh;
+  background-image: url("../src/assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: hsla(100, 30, 200, 40); */
+  /* background-size: auto; */
+  /* opacity: 0.5; */
+}
 
 
 

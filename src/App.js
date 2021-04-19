@@ -7,10 +7,11 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import HomePage from './pages/Home';
 import NotFound from './pages/NotFound';
+import image from "../src/assets/images/background.jpg";
 
 function App() {
   return (
-    <div className= "fullView">     
+    <div className= "fullView">
       <Router>
         <HomePage path="/" loggedIn={true}/>
         <LoginPage path="/login" />
@@ -18,7 +19,7 @@ function App() {
         <Contact path="/contact" />
         <NotFound default />
       </Router> 
-      <Link to="/">Home</Link>
+      {/* <Link to="/">Home</Link> */}
     </div>
   );
 }
