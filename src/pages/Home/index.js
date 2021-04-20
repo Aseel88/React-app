@@ -16,14 +16,12 @@ const HomePage = () => {
 
     const getData = async () =>{
         const result = await axios.get(URL);
-        setSearchResults(result.data.hits);
-        // console.log(result);
+        setSearchResults(result.data.hits);        
         setSearchText("");
     };
 
 const onChange = (e) =>{
     setSearchText(e.target.value);
-    // console.log(e.target.value);
    };
 
 

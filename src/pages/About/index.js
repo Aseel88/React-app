@@ -1,9 +1,7 @@
 import React from "react";
 import { navigate } from "@reach/router";
-// import { Router } from "@reach/router";
 import NavBar from "../../components/Navbar"
 import Button from "./../../components/Button";
-// import PropTypes from "prop-types";
 import "./about.css";
 
 const About = () => {

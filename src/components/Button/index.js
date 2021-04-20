@@ -7,12 +7,7 @@ const Button = props => {
   };
 
   Button.propTypes = {
-    // buttonText: PropTypes.string,
-    handleClick: PropTypes.func
+       handleClick: PropTypes.func
   };
 
-  // Button.defaultProps = {
-  //   buttonText: "Search"
-  // };
-// {props.buttonText}
   export default Button;
